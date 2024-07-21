@@ -2,7 +2,6 @@ import { Tooltip } from "@mui/material";
 import { styled } from "@mui/system";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-import "./tooltip.css";
 
 const CustomTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
