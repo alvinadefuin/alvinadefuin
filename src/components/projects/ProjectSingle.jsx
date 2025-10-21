@@ -1,67 +1,51 @@
-import { Tooltip } from "@mui/material";
-import { styled } from "@mui/system";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-
-const CustomTooltip = styled(({ className, ...props }) => (
-  <Tooltip {...props} classes={{ popper: className }} />
-))({
-  [`& .MuiTooltip-tooltip`]: {
-    backgroundColor: "rgba(51, 51, 51, 0.8)",
-    color: "#fff",
-    fontSize: "14px",
-    padding: "10px",
-    borderRadius: "8px",
-    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
-  },
-  [`& .MuiTooltip-arrow`]: {
-    color: "rgba(51, 51, 51, 0.8)",
-  },
-});
 
 const ProjectSingle = ({ title, category, image, url, description }) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, delay: 1 }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{
-        ease: "easeInOut",
-        duration: 0.7,
-        delay: 0.15,
+        duration: 0.5,
+        delay: 0.1,
       }}
+      className="group"
     >
-      <div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
-        <CustomTooltip title={description} arrow>
-          <div>
-            <img
-              src={image}
-              className="rounded-t-xl border-none"
-              alt="Single Project"
-            />
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block rounded-2xl overflow-hidden bg-secondary-light dark:bg-secondary-dark border border-ternary-light dark:border-ternary-dark hover:border-accent-light dark:hover:border-accent-dark transition-all duration-300 hover:shadow-2xl"
+      >
+        <div className="relative overflow-hidden aspect-video">
+          <img
+            src={image}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            alt={title}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
+            <div className="flex items-center gap-2 text-white">
+              <span className="text-sm font-medium">View Project</span>
+              <FiExternalLink className="w-4 h-4" />
+            </div>
           </div>
-          <div className="text-center px-4 py-6">
-            <p className="font-general-medium text-lg md:text-xl text-ternary-dark dark:text-ternary-light mb-2">
-              {title}
-            </p>
-            <span className="text-lg text-ternary-dark dark:text-ternary-light">
+        </div>
+        <div className="p-6">
+          <div className="mb-2">
+            <span className="inline-block px-3 py-1 bg-accent-light/10 dark:bg-accent-dark/10 text-accent-light dark:text-accent-dark text-xs font-medium rounded-full">
               {category}
             </span>
           </div>
-          <div>
-            <center>
-              <a
-                href={url}
-                className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-10 duration-300"
-              >
-                <i className="text-xl sm:text-xl md:text-3xl">
-                  <FiExternalLink />
-                </i>
-              </a>
-              <br></br>
-            </center>
-          </div>
-        </CustomTooltip>
-      </div>
+          <h3 className="text-xl font-semibold text-text-primary-light dark:text-text-primary-dark mb-2 group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
+            {title}
+          </h3>
+          <p className="text-sm text-text-secondary-light dark:text-text-secondary-dark line-clamp-2">
+            {description}
+          </p>
+        </div>
+      </a>
     </motion.div>
   );
 };

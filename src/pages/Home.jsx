@@ -1,27 +1,53 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import ProjectsGrid from '../components/projects/ProjectsGrid';
-import Button from '../components/reusable/Button';
+import { FiArrowRight } from 'react-icons/fi';
 import AppBanner from '../components/shared/AppBanner';
+import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 
 const Home = () => {
 	return (
-		<div className="container mx-auto">
-			<AppBanner></AppBanner>
+		<div className="bg-primary-light dark:bg-primary-dark min-h-screen">
+			<AppBanner />
 
-			<ProjectsProvider>
-				<ProjectsGrid></ProjectsGrid>
-			</ProjectsProvider>
+			<section className="py-20 bg-secondary-light dark:bg-secondary-dark">
+				<div className="container mx-auto max-w-7xl px-4">
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.5 }}
+						className="text-center mb-16"
+					>
+						<h2 className="text-4xl md:text-5xl font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
+							Featured Projects
+						</h2>
+						<p className="text-lg text-text-secondary-light dark:text-text-secondary-dark max-w-2xl mx-auto">
+							A selection of my recent work in AI, full-stack development, and software engineering
+						</p>
+					</motion.div>
 
-			<div className="mt-8 sm:mt-10 flex justify-center">
-				<Link
-					to="/projects"
-					className="font-general-medium flex items-center px-6 py-3 rounded-lg shadow-lg hover:shadow-xl bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 text-white text-lg sm:text-xl duration-300"
-					aria-label="Go to Projects"
-				>
-					<Button title="Go to Projects" />
-				</Link>
-			</div>
+					<ProjectsProvider>
+						<ProjectsGrid />
+					</ProjectsProvider>
+
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.5 }}
+						className="mt-16 flex justify-center"
+					>
+						<Link
+							to="/projects"
+							className="inline-flex items-center gap-2 px-8 py-4 bg-accent-light dark:bg-accent-dark text-white rounded-lg font-medium hover:opacity-90 transition-all shadow-lg hover:shadow-xl group"
+						>
+							View all projects
+							<FiArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+						</Link>
+					</motion.div>
+				</div>
+			</section>
 		</div>
 	);
 };

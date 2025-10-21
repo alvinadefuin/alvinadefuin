@@ -6,15 +6,19 @@ const AboutMeBio = () => {
 	const { aboutMe } = useContext(AboutMeContext);
 
 	return (
-		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
-			<div className="w-full sm:w-1/4 mb-7 sm:mb-0">
-				<img src={profileImage} className="rounded-lg w-96" alt="" />
+		<div className="flex flex-col md:flex-row gap-12 items-center">
+			<div className="w-full md:w-1/3">
+				<img
+					src={profileImage}
+					className="rounded-2xl w-full shadow-2xl border border-ternary-light dark:border-ternary-dark"
+					alt="Alvin Adefuin"
+				/>
 			</div>
 
-			<div className="font-general-regular w-full sm:w-3/4 text-left">
+			<div className="w-full md:w-2/3 space-y-4">
 				{aboutMe.map((bio) => (
 					<p
-						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+						className="text-text-secondary-light dark:text-text-secondary-dark text-lg leading-relaxed"
 						key={bio.id}
 					>
 						{bio.bio}

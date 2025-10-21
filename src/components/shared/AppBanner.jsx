@@ -1,81 +1,98 @@
 import { motion } from 'framer-motion';
-import { FiArrowDownCircle } from 'react-icons/fi';
-import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import developerDark from '../../images/devdark.svg';
-import developerLight from '../../images/devlight.svg';
+import { FiGithub, FiLinkedin, FiMail, FiDownload } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const AppBanner = () => {
-	const [activeTheme] = useThemeSwitcher();
-
 	return (
-		<motion.section
-			initial={{ opacity: 0 }}
-			animate={{ opacity: 1 }}
-			transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-			className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
-		>
-			<div className="w-full md:w-1/3 text-left">
-				<motion.h1
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{
-						ease: 'easeInOut',
-						duration: 0.9,
-						delay: 0.1,
-					}}
-					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
-				>
-					Hi, I am Alvin
-				</motion.h1>
-				<motion.p
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{
-						ease: 'easeInOut',
-						duration: 0.9,
-						delay: 0.2,
-					}}
-					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
-				>
-					A Computer Science Graduate & AI Software Developer
-				</motion.p>
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{
-						ease: 'easeInOut',
-						duration: 0.9,
-						delay: 0.3,
-					}}
-					className="flex justify-center sm:block"
-				>
-					<a
-						download="AdefuinAlvin-CV.pdf"
-						href="/files/AdefuinAlvin-CV.pdf"
-						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
-						aria-label="Download CV"
+		<section className="min-h-screen flex items-center justify-center pt-20 pb-16">
+			<div className="container mx-auto max-w-6xl px-4">
+				<div className="flex flex-col items-center text-center">
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5 }}
+						className="mb-6"
 					>
-						<FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
-						<span className="text-sm sm:text-lg font-general-medium duration-100">
-							Download CV
+						<span className="inline-block px-4 py-2 bg-secondary-light dark:bg-secondary-dark rounded-full text-sm font-medium text-accent-light dark:text-accent-dark mb-6">
+							Available for work
 						</span>
-					</a>
-				</motion.div>
+					</motion.div>
+
+					<motion.h1
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5, delay: 0.1 }}
+						className="text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary-light dark:text-text-primary-dark mb-6 leading-tight"
+					>
+						Alvin Adefuin
+					</motion.h1>
+
+					<motion.p
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5, delay: 0.2 }}
+						className="text-xl md:text-2xl text-text-secondary-light dark:text-text-secondary-dark max-w-3xl mb-12"
+					>
+						AI Software Developer specializing in full-stack development with Python, React, and Flask
+					</motion.p>
+
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5, delay: 0.3 }}
+						className="flex flex-wrap gap-4 justify-center mb-12"
+					>
+						<Link
+							to="/contact"
+							className="px-8 py-4 bg-accent-light dark:bg-accent-dark text-white rounded-lg font-medium hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
+						>
+							Get in touch
+						</Link>
+						<a
+							download="AdefuinAlvin-CV.pdf"
+							href="/files/AdefuinAlvin-CV.pdf"
+							className="px-8 py-4 bg-secondary-light dark:bg-secondary-dark text-text-primary-light dark:text-text-primary-dark rounded-lg font-medium hover:bg-ternary-light dark:hover:bg-ternary-dark transition-all flex items-center gap-2"
+						>
+							<FiDownload className="w-5 h-5" />
+							Download CV
+						</a>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{ duration: 0.5, delay: 0.4 }}
+						className="flex gap-6"
+					>
+						<a
+							href="https://github.com/alvinadefuin"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="p-3 rounded-lg bg-secondary-light dark:bg-secondary-dark text-text-secondary-light dark:text-text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors"
+							aria-label="GitHub"
+						>
+							<FiGithub className="w-6 h-6" />
+						</a>
+						<a
+							href="https://linkedin.com/in/alvinadefuin"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="p-3 rounded-lg bg-secondary-light dark:bg-secondary-dark text-text-secondary-light dark:text-text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors"
+							aria-label="LinkedIn"
+						>
+							<FiLinkedin className="w-6 h-6" />
+						</a>
+						<a
+							href="mailto:alvin@example.com"
+							className="p-3 rounded-lg bg-secondary-light dark:bg-secondary-dark text-text-secondary-light dark:text-text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors"
+							aria-label="Email"
+						>
+							<FiMail className="w-6 h-6" />
+						</a>
+					</motion.div>
+				</div>
 			</div>
-			<motion.div
-				initial={{ opacity: 0, y: -180 }}
-				animate={{ opacity: 1, y: 0 }}
-				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
-			>
-				<img
-					src={
-						activeTheme === 'light' ? developerLight : developerDark
-					}
-					alt="Developer"
-				/>
-			</motion.div>
-		</motion.section>
+		</section>
 	);
 };
 
