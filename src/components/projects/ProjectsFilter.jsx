@@ -10,28 +10,13 @@ const ProjectsFilter = ({ setSelectProject }) => {
 			onChange={(e) => {
 				setSelectProject(e.target.value);
 			}}
-			className="font-general-medium 
-                px-4
-                sm:px-6
-                py-2
-                border
-                dark:border-secondary-dark
-                rounded-lg
-                text-sm
-                sm:text-md
-                dark:font-medium
-                bg-secondary-light
-                dark:bg-ternary-dark
-                text-primary-dark
-                dark:text-ternary-light
-            "
+			className="px-4 py-3 border border-ternary-light dark:border-ternary-dark rounded-lg bg-primary-light dark:bg-primary-dark text-text-primary-light dark:text-text-primary-dark focus:outline-none focus:ring-2 focus:ring-accent-light dark:focus:ring-accent-dark transition-all"
+			defaultValue=""
 		>
-			<option value={setSelectProject} className="text-sm sm:text-md">
-				All Projects
-			</option>
+			<option value="">All Projects</option>
 
 			{selectOptions.map((option) => (
-				<option className="text-normal sm:text-md" key={option}>
+				<option value={option} key={option}>
 					{option}
 				</option>
 			))}
