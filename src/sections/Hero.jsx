@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail, FiChevronDown } from 'react-icons/fi';
+import Typewriter from 'typewriter-effect';
+import ParticlesBackground from '../components/ParticlesBackground';
 
 const Hero = () => {
 	const scrollToSection = (id) => {
@@ -8,6 +10,9 @@ const Hero = () => {
 
 	return (
 		<section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+			{/* Particles Background */}
+			<ParticlesBackground />
+
 			{/* Animated background gradient */}
 			<div className="absolute inset-0 bg-gradient-to-br from-accent-light/5 via-transparent to-accent-dark/5 dark:from-accent-dark/10 dark:via-transparent dark:to-accent-light/10"></div>
 
@@ -29,7 +34,21 @@ const Hero = () => {
 						transition={{ duration: 0.6, delay: 0.2 }}
 					>
 						<h2 className="text-2xl md:text-4xl font-medium text-text-primary-light dark:text-text-primary-dark mb-4">
-							AI Software Developer
+							<Typewriter
+								options={{
+									strings: [
+										'AI Software Developer',
+										'Full-Stack Developer',
+										'Python Expert',
+										'React Enthusiast',
+										'Problem Solver'
+									],
+									autoStart: true,
+									loop: true,
+									deleteSpeed: 50,
+									delay: 80,
+								}}
+							/>
 						</h2>
 						<p className="text-lg md:text-xl text-text-secondary-light dark:text-text-secondary-dark max-w-2xl mx-auto mb-12">
 							Crafting intelligent solutions with Python, React, and Flask. Passionate about AI and full-stack development.
