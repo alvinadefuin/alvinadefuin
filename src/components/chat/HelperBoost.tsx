@@ -123,7 +123,7 @@ const AnimatedChevron = () => {
       }}
       transition={{
         duration: 1.5,
-        ease: 'easeInOut',
+        ease: 'easeInOut' as const,
         repeat: Infinity,
         repeatType: 'loop',
       }}
