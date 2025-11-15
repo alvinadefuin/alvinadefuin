@@ -120,7 +120,6 @@ I'm always open to interesting conversations and collaboration opportunities!
 - 💼 **LinkedIn**: [linkedin.com/in/alvinadefuin](https://linkedin.com/in/alvinadefuin)
 - 🌐 **Portfolio**: [alvinadefuin.netlify.app](https://alvinadefuin.netlify.app)
 - 📧 **Email**: adefuinalvin1@gmail.com
-- 📱 **Phone**: +63 919 698 3489
 
 **Available for**: Full-time opportunities, collaborations, and exciting AI/ML projects!
 
@@ -136,7 +135,5 @@ I'm always open to interesting conversations and collaboration opportunities!
 <div align="center">
 
 **⭐️ If you like this portfolio template, please give it a star!**
-
-*Built with ❤️ using Next.js, TypeScript, and Claude AI*
 
 </div>
