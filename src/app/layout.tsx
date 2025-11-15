@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Alvin Adefuin",
-      url: "https://alvinadefuin.netlify.app",
+      url: "https://alvinadefuin-portfolio.vercel.app",
     },
   ],
   creator: "Alvin Adefuin",
@@ -65,13 +65,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://alvinadefuin.netlify.app",
+    url: "https://alvinadefuin-portfolio.vercel.app",
     title: "Alvin Adefuin - AI Software Developer | Professional Portfolio",
     description: "Professional portfolio showcasing AI-powered projects including Journey AI with RAG systems and KASAKA Agricultural Application. Best in Thesis awardee available for new opportunities.",
     siteName: "Alvin Adefuin Portfolio",
     images: [
       {
-        url: "https://alvinadefuin.netlify.app/portfolio.png",
+        url: "https://alvinadefuin-portfolio.vercel.app/portfolio.png",
         width: 1200,
         height: 630,
         alt: "Alvin Adefuin - Professional Portfolio with AI Chatbot",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     creator: "@alvinadefuin",
     site: "@alvinadefuin",
     images: [{
-      url: "https://alvinadefuin.netlify.app/portfolio.png",
+      url: "https://alvinadefuin-portfolio.vercel.app/portfolio.png",
       alt: "Alvin Adefuin Professional Portfolio"
     }],
   },
@@ -102,7 +102,7 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   alternates: {
-    canonical: "https://alvinadefuin.netlify.app",
+    canonical: "https://alvinadefuin-portfolio.vercel.app",
   },
   category: "technology",
   classification: "Portfolio Website",
@@ -121,7 +121,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="canonical" href="https://alvinadefuin.netlify.app" />
+        <link rel="canonical" href="https://alvinadefuin-portfolio.vercel.app" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -130,8 +130,8 @@ export default function RootLayout({
               "@type": "Person",
               "name": "Alvin Adefuin",
               "jobTitle": "AI Software Developer",
-              "url": "https://alvinadefuin.netlify.app",
-              "image": "https://alvinadefuin.netlify.app/avatar.jpg",
+              "url": "https://alvinadefuin-portfolio.vercel.app",
+              "image": "https://alvinadefuin-portfolio.vercel.app/avatar.jpg",
               "sameAs": [
                 "https://github.com/alvinadefuin",
                 "https://linkedin.com/in/alvinadefuin"

@@ -4,7 +4,7 @@
 
 I'm passionate about building AI-powered solutions with modern technologies. Currently working on RAG systems, full-stack development, and creating intelligent applications that solve real-world problems.
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-alvinadefuin.netlify.app-blue?style=for-the-badge)](https://alvinadefuin.netlify.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-alvinadefuin--portfolio.vercel.app-blue?style=for-the-badge)](https://alvinadefuin-portfolio.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/alvinadefuin)
 [![Email](https://img.shields.io/badge/Email-adefuinalvin1@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adefuinalvin1@gmail.com)
 
@@ -49,7 +49,7 @@ Building AI-powered solutions for business intelligence applications
 - **Tech**: Python, Flask, React, RAG, API Development
 - **Focus**: Full-stack AI features, enterprise systems
 
-[➡️ View all projects](https://alvinadefuin.netlify.app)
+[➡️ View all projects](https://alvinadefuin-portfolio.vercel.app)
 
 ## 📊 GitHub Stats
 
@@ -118,7 +118,7 @@ See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed instructions.
 I'm always open to interesting conversations and collaboration opportunities!
 
 - 💼 **LinkedIn**: [linkedin.com/in/alvinadefuin](https://linkedin.com/in/alvinadefuin)
-- 🌐 **Portfolio**: [alvinadefuin.netlify.app](https://alvinadefuin.netlify.app)
+- 🌐 **Portfolio**: [alvinadefuin-portfolio.vercel.app](https://alvinadefuin-portfolio.vercel.app)
 - 📧 **Email**: adefuinalvin1@gmail.com
 
 **Available for**: Full-time opportunities, collaborations, and exciting AI/ML projects!
