@@ -167,6 +167,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
+- **Inspired by**: [Anuj Jain's Portfolio](https://github.com/anujjainbatu/portfolio) - Special thanks for the design inspiration and project structure
 - [shadcn/ui](https://ui.shadcn.com/) for the beautiful component library
 - [Anthropic](https://www.anthropic.com/) for Claude AI
 - [Vercel](https://vercel.com/) for the AI SDK and hosting platform
