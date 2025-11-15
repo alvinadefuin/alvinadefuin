@@ -1,0 +1,257 @@
+{
+  "personal": {
+    "name": "Alvin Adefuin",
+    "age": null,
+    "birthdate": "2000-07-17",
+    "location": "Santa Cruz, Laguna, Philippines",
+    "title": "AI Software Developer",
+    "email": "adefuinalvin1@gmail.com",
+    "phone": "0919 698 3489",
+    "handle": "@alvinadefuin",
+    "bio": "Hey 👋\nI'm Alvin, an AI Software Developer at Journey Better Business Group Inc. with expertise in both frontend and backend development. My proficiency in Agile methodologies and project management, coupled with a commitment to continuous learning and teamwork, has empowered me to drive innovation and contribute effectively to various projects. I love building AI-powered solutions with modern technologies.",
+    "avatar": "/profile.png",
+    "fallbackAvatar": "/placeholder.jpg"
+  },
+  "education": {
+    "current": {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "Laguna University",
+      "duration": "2019-2023",
+      "cgpa": null,
+      "graduationDate": "2023"
+    },
+    "previous": null,
+    "achievements": [
+      "Best in Thesis Awardee for KASAKA Agricultural Application"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Journey Better Business Group Inc.",
+      "position": "AI Software Developer",
+      "type": "Full-time",
+      "duration": "August 2023 - Present",
+      "description": "Developing Journey AI features with expertise in both frontend and backend technologies. Implemented RAG for Q&A, enhanced frontend with JavaScript and React/Preact, and managed backend services with Python and Flask.",
+      "technologies": ["Python", "Flask", "React", "Preact", "JavaScript", "RAG", "GitHub Actions", "Sentry", "API Development"]
+    },
+    {
+      "company": "Highly Succeed Inc.",
+      "position": "Web Developer Intern",
+      "type": "Internship",
+      "duration": "February 2023 - April 2023",
+      "description": "Contributed to web application development and team collaboration. Designed web application UI for optimal user experience, integrated web APIs, resolved Jira tickets, and collaborated with development teams.",
+      "technologies": ["Web Development", "API Integration", "UI/UX Design", "Jira"]
+    }
+  ],
+  "skills": {
+    "programming": ["Python", "Java", "JavaScript", "HTML", "CSS"],
+    "ml_ai": ["RAG (Retrieval Augmented Generation)", "Machine Learning", "Naïve Bayes Algorithm", "AI Development"],
+    "web_development": ["React", "Preact", "Next.js", "Flask", "Flutter", "API Development"],
+    "databases": ["PostgreSQL", "Firebase"],
+    "devops_cloud": ["Docker", "GitHub Actions", "Sentry", "Git", "GitHub", "BitBucket", "GitLab"],
+    "iot_hardware": [],
+    "tools": ["PyCharm", "VSCode", "Git", "GitHub", "BitBucket", "GitLab", "Docker", "GitHub Actions", "Sentry"],
+    "soft_skills": [
+      "Team Player",
+      "Flexibility",
+      "Problem Solving",
+      "Adaptability",
+      "Continuous Learning"
+    ]
+  },
+  "personality": {
+    "traits": ["passionate", "team player", "adaptable", "problem solver", "continuous learner"],
+    "interests": ["AI/ML", "RAG Systems", "Web Development", "Full-stack Development", "API Development", "Agile Methodologies"],
+    "funFacts": [
+      "Best in Thesis Awardee for KASAKA Agricultural Application",
+      "Developed RAG-based Q&A system for business intelligence",
+      "Worked on both frontend (React/Preact) and backend (Python/Flask)"
+    ],
+    "workingStyle": "Agile, collaborative, and focused on continuous improvement with strong technical execution",
+    "motivation": "Building innovative AI-powered solutions that solve real-world problems and drive business value"
+  },
+  "internship": {
+    "seeking": true,
+    "duration": "Full-time position",
+    "startDate": "Immediate",
+    "preferredLocation": "Remote or On-site",
+    "focusAreas": ["AI Development", "Full-stack Development", "RAG Systems", "API Development"],
+    "availability": "Available for opportunities",
+    "workStyle": "Fast learner, team player, problem solver with hands-on experience in AI development and full-stack systems",
+    "goals": "Join an innovative team building AI-powered solutions. I want to contribute to meaningful projects while growing my skills in enterprise-level development and scaling AI systems."
+  },
+  "projects": [
+    {
+      "title": "KASAKA: Agricultural Web & Mobile App",
+      "description": "Agricultural mapping application for monitoring rice plant development stages using the Naïve Bayes Algorithm. Led the development as Thesis Leader, earning Best in Thesis award.",
+      "category": "AI/Web Development",
+      "techStack": ["Next.js", "Flutter", "Firebase", "Naïve Bayes Algorithm", "Machine Learning"],
+      "date": "2023",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "Demo Video",
+          "url": "https://youtu.be/Il3CISBJDNE"
+        }
+      ],
+      "images": [
+        {
+          "src": "/projects/kasaka.gif",
+          "alt": "KASAKA Agricultural Application"
+        }
+      ]
+    },
+    {
+      "title": "AI-Powered Natural Language Search System",
+      "description": "Developed an intelligent search system for 34,607 unique products using single-call architecture with RAG category classification via Railway middleware. Implemented hybrid semantic and keyword search with OpenAI embeddings, achieving 84.6% accuracy in category detection.",
+      "category": "AI/Full-stack Development",
+      "techStack": ["Python", "FastAPI", "Typesense Cloud", "OpenAI GPT-4o-mini", "RAG", "Neon PostgreSQL", "Railway", "text-embedding-3-small", "Vercel"],
+      "date": "2025",
+      "status": "Completed",
+      "featured": true,
+      "links": [],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "AI Search System"
+        }
+      ]
+    },
+    {
+      "title": "AI Development at JBBGI",
+      "description": "Contributing to AI-powered solutions and full-stack development for business intelligence applications. Working with modern technologies across frontend and backend systems.",
+      "category": "AI/Full-stack Development",
+      "techStack": ["Python", "Flask", "React", "JavaScript", "AI/ML", "API Development"],
+      "date": "2023 - Present",
+      "status": "Ongoing",
+      "featured": true,
+      "links": [],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "AI Development Work"
+        }
+      ]
+    },
+    {
+      "title": "SBCC Financial System",
+      "description": "Church Financial Management System with Google Forms integration for streamlined financial tracking and reporting. Built to help manage church finances efficiently with automated data collection and analysis.",
+      "category": "Web Development",
+      "techStack": ["JavaScript", "Google Forms API", "Web Development"],
+      "date": "2025",
+      "status": "Completed",
+      "featured": false,
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/alvinadefuin/sbcc-financial-system"
+        }
+      ],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "SBCC Financial System"
+        }
+      ]
+    },
+    {
+      "title": "Site Asset Downloader",
+      "description": "A web-based tool to automatically extract and download images, videos, and other media assets from any website. Simplifies the process of bulk downloading media content for web development and research purposes.",
+      "category": "Web Development",
+      "techStack": ["JavaScript", "Web Scraping", "Media Processing"],
+      "date": "2025",
+      "status": "Completed",
+      "featured": false,
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/alvinadefuin/site-asset-downloader"
+        }
+      ],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "Site Asset Downloader"
+        }
+      ]
+    },
+    {
+      "title": "LUCS Forum",
+      "description": "A UI/UX design project created at age 19, experimenting with HTML and CSS to build a forum interface. An early exploration of web design principles and frontend development.",
+      "category": "Web Development",
+      "techStack": ["HTML", "CSS", "UI/UX Design"],
+      "date": "2024",
+      "status": "Completed",
+      "featured": false,
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/alvinadefuin/LUCS-forum"
+        }
+      ],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "LUCS Forum"
+        }
+      ]
+    },
+    {
+      "title": "eDocx",
+      "description": "A web-based tool that simplifies the document request process for students. Streamlines administrative workflows by providing an easy-to-use interface for requesting and managing academic documents.",
+      "category": "Web Development",
+      "techStack": ["PHP", "Web Development", "Database Management"],
+      "date": "2024",
+      "status": "Completed",
+      "featured": false,
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/alvinadefuin/eDocx"
+        }
+      ],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "eDocx Document Request System"
+        }
+      ]
+    }
+  ],
+  "certifications": [],
+  "awards": [
+    {
+      "title": "Best in Thesis",
+      "organization": "Laguna University",
+      "year": "2023",
+      "description": "Awarded for the KASAKA Agricultural Web & Mobile Application thesis project"
+    }
+  ],
+  "resume": {
+    "title": "Alvin Adefuin - Resume",
+    "description": "AI Software Developer | Full-stack Developer | RAG Systems Expert",
+    "fileType": "PDF",
+    "lastUpdated": "October 2025",
+    "fileSize": "N/A",
+    "downloadUrl": ""
+  },
+  "contact": {
+    "email": "adefuinalvin1@gmail.com",
+    "phone": "0919 698 3489",
+    "location": "Santa Cruz, Laguna, Philippines",
+    "availability": "Available for Opportunities",
+    "preferredContact": "Email"
+  },
+  "social": {
+    "github": "https://github.com/alvinadefuin",
+    "linkedin": "https://linkedin.com/in/alvinadefuin",
+    "website": "https://alvinadefuin.netlify.app",
+    "twitter": null,
+    "instagram": null
+  },
+  "preferences": {
+    "theme": "light",
+    "language": "en"
+  }
+}
