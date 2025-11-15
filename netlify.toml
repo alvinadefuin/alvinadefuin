@@ -1,0 +1,14 @@
+# Netlify configuration - redirect all traffic to Vercel deployment
+# This file is only used by Netlify and won't affect Vercel deployment
+
+[build]
+  # Skip build process since we're only redirecting
+  command = "echo 'Redirecting to Vercel deployment'"
+  publish = "public"
+
+# Force redirects to take precedence
+[[redirects]]
+  from = "/*"
+  to = "https://alvinadefuin-portfolio.vercel.app/:splat"
+  status = 301
+  force = true
