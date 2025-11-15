@@ -8,7 +8,7 @@ I'm currently in the process of migrating my projects to GitHub. As I work on br
 
 ### Available Project
 
-- **[Portfolio](https://alvinadefuin.netlify.app/)**: My personal website portfolio is up and running. Feel free to check it out to learn more about me and my work.
+- **[Portfolio](https://Alvindefuin.netlify.app/)**: My personal website portfolio is up and running. Feel free to check it out to learn more about me and my work.
 
 ### What's Coming?
 
