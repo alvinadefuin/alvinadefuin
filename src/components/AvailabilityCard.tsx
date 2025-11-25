@@ -72,7 +72,7 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
               Alvin Adefuin
             </h2>
             <p className="text-muted-foreground text-sm">
-              Available for Opportunities
+              Available for Full-Time Opportunities
             </p>
           </div>
         </div>
@@ -87,7 +87,7 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
             Available Now
           </span>
           <p className="text-xs text-muted-foreground text-center sm:text-right">
-            Open to part-time & project-based work
+            Ready to start within 2-4 weeks
           </p>
         </div>
       </div>
@@ -104,13 +104,13 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
           <div>
             <p className="text-sm font-medium text-foreground mb-1">Status</p>
             <p className="text-sm text-green-600 dark:text-green-400 font-semibold">
-              {data?.availability || "✅ Available for immediate start"}
+              {data?.availability || "✅ Available full-time (2-4 weeks notice)"}
             </p>
           </div>
           <div>
             <p className="text-sm font-medium text-foreground mb-1">Looking for</p>
             <p className="text-sm text-blue-600 dark:text-blue-400 font-semibold">
-              Part-time roles & Project-based work
+              Full-time roles & Long-term opportunities
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
           <div>
             <p className="text-foreground text-sm font-medium">Duration</p>
             <p className="text-muted-foreground text-sm">
-              {data?.availability || "Available for part-time & project-based work starting immediately"}
+              {data?.availability || "Available for full-time work with 2-4 weeks notice"}
             </p>
           </div>
         </div>
@@ -196,12 +196,19 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
       <div className="mt-8">
         <p className="text-foreground mb-2 text-lg font-semibold">Goal</p>
         <p className="text-foreground text-sm">
-          {data?.lookingFor.growthOpportunities || "Looking for part-time or project-based opportunities to expand my skills alongside my full-time role."} I want to work on {data?.lookingFor.technicalChallenges || "AI/ML, web development, frontend design, or full-stack projects"} that {data?.lookingFor.impactfulWork || "solve real-world problems and create meaningful impact"}. I'm passionate, adaptable, and ready to contribute to {data?.lookingFor.collaboration || "collaborative, innovative projects"}! 🚀
+          {data?.lookingFor.growthOpportunities || "Looking for full-time opportunities to grow and advance my career in AI/ML and software development."} I want to work on {data?.lookingFor.technicalChallenges || "AI/ML, web development, frontend design, or full-stack projects"} that {data?.lookingFor.impactfulWork || "solve real-world problems and create meaningful impact"}. I'm passionate, adaptable, and ready to contribute to {data?.lookingFor.collaboration || "collaborative, innovative teams and projects"}! 🚀
         </p>
       </div>
 
-      {/* Contact button */}
-      <div className="mt-10 flex justify-center">
+      {/* Contact and CV buttons */}
+      <div className="mt-10 flex justify-center gap-4 flex-wrap">
+        <a
+          href="/adefuinalvin-cv-2025-updated.pdf"
+          download
+          className="cursor-pointer rounded-full bg-blue-600 px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-blue-700"
+        >
+          Download CV
+        </a>
         <button
           onClick={handleContactClick}
           className="cursor-pointer rounded-full bg-black px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-zinc-800"
