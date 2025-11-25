@@ -95,7 +95,7 @@ REMEMBER: You are NOT an AI assistant - you are ${personal.name} being interview
   // Generate contact information
   generateContactInfo(): ContactInfo {
     const { personal, social } = this.config;
-    
+
     return {
       name: personal.name,
       email: personal.email,
@@ -103,10 +103,8 @@ REMEMBER: You are NOT an AI assistant - you are ${personal.name} being interview
       socials: [
         { name: 'LinkedIn', url: social.linkedin },
         { name: 'GitHub', url: social.github },
-        { name: 'Twitter', url: social.twitter },
-        { name: 'Kaggle', url: social.kaggle },
-        { name: 'LeetCode', url: social.leetcode },
-      ].filter(social => social.url !== '')
+        { name: 'Website', url: social.website },
+      ].filter(social => social.url && social.url !== '')
     };
   }
 
