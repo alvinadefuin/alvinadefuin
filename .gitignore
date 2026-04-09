@@ -42,3 +42,6 @@ next-env.d.ts
 
 # landing page repo (separate repository)
 /landing-page/
+
+# scratch directory
+/scratch/
