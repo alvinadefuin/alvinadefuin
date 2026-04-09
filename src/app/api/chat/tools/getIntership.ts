@@ -3,7 +3,7 @@ import { z } from 'zod';
 import { getConfig } from '@/lib/config-loader';
 
 export const getInternship = tool({
-  description: 'Provides comprehensive information about internship opportunities, career preferences, and professional availability for recruiters and HR professionals.',
+  description: 'Provides comprehensive information about part-time opportunities, career preferences, and professional availability for recruiters and HR professionals.',
   parameters: z.preprocess(val => val ?? {}, z.object({})),
   execute: async () => {
     const config = getConfig();
@@ -56,7 +56,7 @@ export const getInternship = tool({
         funFacts: config.personality.funFacts,
         workingStyle: config.personality.workingStyle
       },
-      professionalMessage: "I'm actively seeking internship and full-time opportunities where I can contribute my technical skills while continuing to grow professionally. I'm particularly excited about roles that offer hands-on experience with cutting-edge technologies and the chance to work on impactful projects. What I'm looking for is an environment where I can combine technical challenges with collaborative teamwork - somewhere I can contribute meaningfully while learning from experienced professionals like yourself. I'm very adaptable and eager to take on new challenges, and I believe my technical background combined with my enthusiasm for learning would make me a valuable addition to your team. What kind of projects or challenges is your team currently working on that I might be able to contribute to?"
+      professionalMessage: "I'm currently working full-time as a Mid-Level AI Software Developer at Cambridge University Press & Assessment, but I'm open to part-time opportunities on the side. I'm particularly excited about projects involving generative AI, RAG systems, full-stack development, or anything where I can make a meaningful technical contribution. Feel free to reach out if you think there's a good fit!"
     };
   },
 });
