@@ -48,7 +48,7 @@ const MiniAvatar = () => (
 
 const msgVariants = {
   initial: { opacity: 0, y: 8 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.25, ease: 'easeOut' } },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.25, ease: 'easeOut' as const } },
 };
 
 const Chat = () => {
@@ -348,7 +348,7 @@ const TypingIndicator = () => (
         key={i}
         className="block h-2 w-2 rounded-full bg-gray-400"
         animate={{ y: [0, -4, 0] }}
-        transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15, ease: 'easeInOut' }}
+        transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15, ease: 'easeInOut' as const }}
       />
     ))}
   </div>
