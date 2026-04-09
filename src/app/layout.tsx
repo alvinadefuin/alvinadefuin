@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Alvin Adefuin - AI Software Developer | Professional Portfolio",
     template: "%s | Alvin Adefuin Portfolio"
   },
-  description: "Professional portfolio of Alvin Adefuin - AI Software Developer with expertise in RAG Systems, Full-stack Development, and AI-powered solutions. Showcasing Journey AI projects and KASAKA Agricultural App. Available for opportunities.",
+  description: "Professional portfolio of Alvin Adefuin - AI Software Developer with expertise in RAG Systems, Full-stack Development, and AI-powered solutions. Showcasing Journey AI projects and KASAKA Agricultural App. Available for part-time opportunities.",
   keywords: [
     "Alvin Adefuin",
     "AI Software Developer",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://alvinadefuin-portfolio.vercel.app",
     title: "Alvin Adefuin - AI Software Developer | Professional Portfolio",
-    description: "Professional portfolio showcasing AI-powered projects including Journey AI with RAG systems and KASAKA Agricultural Application. Best in Thesis awardee available for new opportunities.",
+    description: "Professional portfolio showcasing AI-powered projects including Journey AI with RAG systems and KASAKA Agricultural Application. Best in Thesis awardee available for part-time opportunities.",
     siteName: "Alvin Adefuin Portfolio",
     images: [
       {
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Alvin Adefuin - AI Software Developer",
-    description: "Professional portfolio showcasing AI projects, RAG systems, and full-stack development solutions. Available for opportunities.",
+    description: "Professional portfolio showcasing AI projects, RAG systems, and full-stack development solutions. Available for part-time opportunities.",
     creator: "@alvinadefuin",
     site: "@alvinadefuin",
     images: [{
