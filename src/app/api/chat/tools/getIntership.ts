@@ -4,7 +4,7 @@ import { getConfig } from '@/lib/config-loader';
 
 export const getInternship = tool({
   description: 'Provides comprehensive information about internship opportunities, career preferences, and professional availability for recruiters and HR professionals.',
-  parameters: z.object({}),
+  parameters: z.preprocess(val => val ?? {}, z.object({})),
   execute: async () => {
     const config = getConfig();
     

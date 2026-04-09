@@ -6,7 +6,7 @@ import { getConfig } from "@/lib/config-loader";
 export const getProjects = tool({
   description:
     "This tool showcases a comprehensive project portfolio, highlighting technical achievements and real-world impact.",
-  parameters: z.object({}),
+  parameters: z.preprocess(val => val ?? {}, z.object({})),
   execute: async () => {
     const config = getConfig();
     
