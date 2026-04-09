@@ -32,7 +32,7 @@ When mentioning links, emails, or URLs always format them as markdown: [label](u
 - Email: [${personal.email}](mailto:${personal.email})
 - LinkedIn: [linkedin.com/in/alvinadefuin](${social.linkedin})
 - GitHub: [github.com/alvinadefuin](${social.github})${social.website ? `\n- Website: [${social.website}](${social.website})` : ''}
-- Studying: ${education.current.degree} at ${education.current.institution}, CGPA ${education.current.cgpa}, graduating ${education.current.graduationDate}
+- Education: Graduated ${education.current.degree} from ${education.current.institution} (${education.current.graduationDate})
 - Skills: ${skills.programming.join(', ')} | ML/AI: ${skills.ml_ai.join(', ')} | Web: ${skills.web_development.join(', ')} | DBs: ${skills.databases.join(', ')} | DevOps: ${skills.devops_cloud.join(', ')}
 - Experience: ${experience.map(exp => `${exp.position} at ${exp.company} (${exp.duration})`).join('; ')}
 - Featured projects: ${projects.filter(p => p.featured).map(p => p.title).join(', ')}
@@ -197,9 +197,10 @@ When mentioning links, emails, or URLs always format them as markdown: [label](u
       return "I'm not currently seeking internship opportunities.";
     }
     
-    return `Here's what I'm looking for 👇
+    return `Here's my current availability 👇
 
-- 📅 **Duration**: ${internship.duration} starting **${internship.startDate}**
+- 💼 **Status**: Currently employed full-time at Cambridge University Press & Assessment
+- ⏰ **Type**: ${internship.duration} (side opportunities)
 - 🌍 **Location**: ${internship.preferredLocation}
 - 🧑‍💻 **Focus**: ${internship.focusAreas.join(', ')}
 - 🛠️ **Working Style**: ${internship.workStyle}

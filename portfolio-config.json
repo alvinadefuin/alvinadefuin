@@ -3,12 +3,11 @@
     "name": "Alvin Adefuin",
     "age": null,
     "birthdate": "2000-07-17",
-    "location": "Santa Cruz, Laguna, Philippines",
+    "location": "Laguna, Philippines (permanent) / Makati City (current)",
     "title": "AI Software Developer",
-    "email": "adefuinalvin1@gmail.com",
-    "phone": "0919 698 3489",
+    "email": "adefuinalvin1@mail.com",
     "handle": "@alvinadefuin",
-    "bio": "Hey 👋\nI'm Alvin, an AI Software Developer at Journey Better Business Group Inc. with expertise in both frontend and backend development. My proficiency in Agile methodologies and project management, coupled with a commitment to continuous learning and teamwork, has empowered me to drive innovation and contribute effectively to various projects. I love building AI-powered solutions with modern technologies.",
+    "bio": "Hey 👋\nI'm Alvin, a Mid-Level AI Software Developer at Cambridge University Press & Assessment, working within a Generative AI Centre of Excellence. I specialize in generative AI solutions, RAG systems, and semantic search — building production-ready AI applications using Python, FastAPI, React/Preact, Typesense, and LangChain. I've delivered AI systems used by 9+ organizations, supporting thousands of users and high-volume LLM operations.",
     "avatar": "/profile.png",
     "fallbackAvatar": "/placeholder.jpg"
   },
@@ -27,12 +26,20 @@
   },
   "experience": [
     {
+      "company": "Cambridge University Press & Assessment",
+      "position": "AI Software Developer - Mid Level",
+      "type": "Full-time",
+      "duration": "February 2026 - Present",
+      "description": "Working within a Generative AI Centre of Excellence, delivering Proof of Concepts that leverage advanced AI technologies to solve complex business problems. Designing AI-powered solutions across multiple business domains, assessing AI technologies for cost and performance, and collaborating cross-functionally with Product Leads and Hub and Spoke leaders.",
+      "technologies": ["Python", "FastAPI", "React", "TypeScript", "LangChain", "RAG", "Agentic Systems", "Prompt Engineering", "Vector Embeddings"]
+    },
+    {
       "company": "Journey Better Business Group Inc.",
       "position": "AI Software Developer",
       "type": "Full-time",
-      "duration": "August 2023 - Present",
-      "description": "Developing Journey AI features with expertise in both frontend and backend technologies. Implemented RAG for Q&A, enhanced frontend with JavaScript and React/Preact, and managed backend services with Python and Flask.",
-      "technologies": ["Python", "Flask", "React", "Preact", "JavaScript", "RAG", "GitHub Actions", "Sentry", "API Development"]
+      "duration": "August 2023 - January 2026",
+      "description": "Built and deployed a production RAG-powered chat widget handling 4,500+ conversations from 3,000+ unique users, generating 1,800+ qualified leads. Designed a distributed knowledge base (1,200+ chunks, 230+ docs) processing 47,000+ LLM API calls with multi-tenant, multi-region deployment supporting 9+ client organizations. Also built an AI-powered semantic search system for 40,000+ SKUs with 3-4x faster response times.",
+      "technologies": ["Python", "Flask", "FastAPI", "React", "Preact", "Next.js", "TypeScript", "RAG", "Typesense", "OpenAI API", "GitHub Actions", "Sentry", "Retool", "Railway"]
     },
     {
       "company": "Highly Succeed Inc.",
@@ -44,13 +51,13 @@
     }
   ],
   "skills": {
-    "programming": ["Python", "Java", "JavaScript", "HTML", "CSS"],
-    "ml_ai": ["RAG (Retrieval Augmented Generation)", "Machine Learning", "Naïve Bayes Algorithm", "AI Development"],
-    "web_development": ["React", "Preact", "Next.js", "Flask", "Flutter", "API Development"],
-    "databases": ["PostgreSQL", "Firebase"],
-    "devops_cloud": ["Docker", "GitHub Actions", "Sentry", "Git", "GitHub", "BitBucket", "GitLab"],
+    "programming": ["Python", "TypeScript", "JavaScript", "Go", "HTML", "CSS"],
+    "ml_ai": ["RAG (Retrieval Augmented Generation)", "LangChain", "OpenAI API", "Semantic Search", "Vector Embeddings", "Prompt Engineering", "Agentic Systems", "Machine Learning"],
+    "web_development": ["React", "Preact", "Next.js", "FastAPI", "Flask", "API Development"],
+    "databases": ["PostgreSQL", "Firebase", "Supabase"],
+    "devops_cloud": ["Docker", "GitHub Actions", "Sentry", "Vercel", "Railway", "Typesense", "Retool", "Git", "GitHub", "Jira"],
     "iot_hardware": [],
-    "tools": ["PyCharm", "VSCode", "Git", "GitHub", "BitBucket", "GitLab", "Docker", "GitHub Actions", "Sentry"],
+    "tools": ["VSCode", "Docker", "GitHub Actions", "Sentry", "Vercel", "Railway", "Typesense", "Retool", "Jira"],
     "soft_skills": [
       "Team Player",
       "Flexibility",
@@ -64,21 +71,21 @@
     "interests": ["AI/ML", "RAG Systems", "Web Development", "Full-stack Development", "API Development", "Agile Methodologies"],
     "funFacts": [
       "Best in Thesis Awardee for KASAKA Agricultural Application",
-      "Developed RAG-based Q&A system for business intelligence",
-      "Worked on both frontend (React/Preact) and backend (Python/Flask)"
+      "Built AI systems used by 9+ organizations with 47,000+ LLM API calls processed",
+      "Working within a Generative AI Centre of Excellence at Cambridge University Press & Assessment"
     ],
     "workingStyle": "Agile, collaborative, and focused on continuous improvement with strong technical execution",
     "motivation": "Building innovative AI-powered solutions that solve real-world problems and drive business value"
   },
   "internship": {
     "seeking": true,
-    "duration": "Full-time position",
+    "duration": "Part-time position",
     "startDate": "Immediate",
     "preferredLocation": "Remote or On-site",
     "focusAreas": ["AI Development", "Full-stack Development", "RAG Systems", "API Development"],
-    "availability": "Available for opportunities",
+    "availability": "Available for part-time opportunities",
     "workStyle": "Fast learner, team player, problem solver with hands-on experience in AI development and full-stack systems",
-    "goals": "Join an innovative team building AI-powered solutions. I want to contribute to meaningful projects while growing my skills in enterprise-level development and scaling AI systems."
+    "goals": "Currently employed full-time as a Mid-Level AI Software Developer at Cambridge University Press & Assessment. Open to part-time roles where I can contribute my skills in generative AI, RAG systems, and full-stack development on the side."
   },
   "projects": [
     {
@@ -232,15 +239,14 @@
     "title": "Alvin Adefuin - Resume",
     "description": "AI Software Developer | Full-stack Developer | RAG Systems Expert",
     "fileType": "PDF",
-    "lastUpdated": "October 2025",
+    "lastUpdated": "April 2026",
     "fileSize": "N/A",
-    "downloadUrl": "/adefuinalvin-cv-2025-updated.pdf"
+    "downloadUrl": "/adefuinalvin-portfolio-cv-2026-04.pdf"
   },
   "contact": {
-    "email": "adefuinalvin1@gmail.com",
-    "phone": "0919 698 3489",
-    "location": "Santa Cruz, Laguna, Philippines",
-    "availability": "Available for Full-Time Opportunities (2-4 weeks notice)",
+    "email": "adefuinalvin1@mail.com",
+    "location": "Laguna, Philippines (permanent) / Makati City (current)",
+    "availability": "Available for Part-Time Opportunities",
     "preferredContact": "Email"
   },
   "social": {
