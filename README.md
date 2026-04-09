@@ -1,8 +1,8 @@
 # Hey there, I'm Alvin! 👋
 
-**AI Software Developer** at Journey Better Business Group Inc. 🚀
+**Mid-Level AI Software Developer** at Cambridge University Press & Assessment 🚀
 
-I'm passionate about building AI-powered solutions with modern technologies. Currently working on RAG systems, full-stack development, and creating intelligent applications that solve real-world problems.
+I specialize in generative AI solutions, RAG systems, and semantic search — building production-ready AI applications using Python, FastAPI, React/Preact, Typesense, and LangChain. Delivered AI systems used by 9+ organizations, supporting thousands of users and high-volume LLM operations.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-alvinadefuin--portfolio.vercel.app-blue?style=for-the-badge)](https://alvinadefuin-portfolio.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/alvinadefuin)
@@ -13,23 +13,23 @@ I'm passionate about building AI-powered solutions with modern technologies. Cur
 ## 🔥 About Me
 
 - 🎓 **Computer Science Graduate** from Laguna University (Best in Thesis Awardee)
-- 💼 **Currently working on**: AI features with RAG, full-stack development, and API integrations
-- 🛠️ **Tech Stack**: Python, Flask, React, Next.js, TypeScript, AI/ML
-- 🌱 **Learning**: Advanced RAG systems, scaling AI applications
-- 💬 **Ask me about**: AI Development, RAG Systems, Full-stack Development
-- 📍 **Based in**: Santa Cruz, Laguna, Philippines
+- 💼 **Currently working on**: Generative AI PoCs within a Generative AI Centre of Excellence
+- 🛠️ **Tech Stack**: Python, FastAPI, React, Next.js, TypeScript, LangChain, RAG
+- 🌱 **Learning**: Agentic systems, advanced prompt engineering, scaling AI applications
+- 💬 **Ask me about**: Generative AI, RAG Systems, Semantic Search, Full-stack Development
+- 📍 **Based in**: Laguna, Philippines (permanent) / Makati City (current)
 - ⚡ **Fun fact**: Built a Naïve Bayes-powered agricultural mapping app that won Best in Thesis
 
 ## 💻 Tech Stack
 
 ```text
-Languages:      Python • JavaScript • TypeScript • Java • HTML • CSS
-AI/ML:          RAG • Machine Learning • Naïve Bayes • AI SDK
+Languages:      Python • TypeScript • JavaScript • Go • HTML • CSS
+AI/ML:          RAG • LangChain • OpenAI API • Semantic Search • Vector Embeddings • Prompt Engineering • Agentic Systems
 Frontend:       React • Next.js • Preact • Tailwind CSS • shadcn/ui
-Backend:        Flask • FastAPI • Node.js • API Development
-Databases:      PostgreSQL • Firebase • Neon
-DevOps:         Docker • GitHub Actions • Sentry • Git
-Cloud:          Vercel • Railway • Netlify
+Backend:        FastAPI • Flask • API Development
+Databases:      PostgreSQL • Firebase • Supabase
+DevOps:         Docker • GitHub Actions • Sentry • Typesense • Retool • Git
+Cloud:          Vercel • Railway
 ```
 
 ## 🚀 Featured Projects
@@ -40,14 +40,14 @@ Agricultural mapping application using Naïve Bayes Algorithm for rice plant mon
 - **Impact**: Automated rice plant development stage detection
 
 ### AI-Powered Natural Language Search System
-Intelligent search for 34K+ products with RAG-based category classification. Achieved **84.6% accuracy**
-- **Tech**: Python, FastAPI, Typesense, OpenAI, PostgreSQL, Railway
-- **Features**: Hybrid semantic & keyword search, single-call architecture
+Semantic search for 40K+ SKUs with 3-4x faster response times via intelligent caching.
+- **Tech**: Python, FastAPI, Typesense, OpenAI, Next.js, TypeScript, Railway
+- **Features**: Context-aware category classification, intelligent filter extraction, query debugging
 
-### AI Development at JBBGI
-Building AI-powered solutions for business intelligence applications
-- **Tech**: Python, Flask, React, RAG, API Development
-- **Focus**: Full-stack AI features, enterprise systems
+### RAG-Powered Chat Widget (Journey BBGI)
+Production chat widget handling 4,500+ conversations from 3,000+ users — 1,800+ qualified leads (29% conversion).
+- **Tech**: Python, Flask, React/Preact, RAG, Sentry, Retool
+- **Scale**: 47,000+ LLM API calls, 9+ client organizations, multi-region (US & EU)
 
 [➡️ View all projects](https://alvinadefuin-portfolio.vercel.app)
 
@@ -61,7 +61,7 @@ This repository contains my **AI-powered portfolio** built with cutting-edge tec
 
 ### ✨ Features
 
-- 🤖 **AI Chatbot** - Powered by Anthropic's Claude for intelligent interactions
+- 🤖 **AI Chatbot** - Powered by Groq (Llama 3.3 70B) for intelligent interactions
 - 🎨 **Modern Design** - Beautiful UI with Next.js 15 + TypeScript + Tailwind CSS
 - 📱 **Fully Responsive** - Optimized for all devices
 - 🌙 **Dark Mode** - Seamless theme switching
@@ -71,7 +71,7 @@ This repository contains my **AI-powered portfolio** built with cutting-edge tec
 ### 🛠️ Tech Stack
 
 **Frontend**: Next.js 15 • TypeScript • Tailwind CSS • shadcn/ui • Radix UI
-**AI/Backend**: Anthropic Claude (Sonnet 4) • AI SDK • Next.js API Routes
+**AI/Backend**: Groq (Llama 3.3 70B) • AI SDK • Next.js API Routes
 **Tools**: Framer Motion • React Hook Form • Sonner
 
 ### 🚀 Quick Start
@@ -85,7 +85,7 @@ npm install
 
 # Set up environment variables
 cp .env.example .env
-# Add your ANTHROPIC_API_KEY and RESEND_API_KEY
+# Add your GROQ_API_KEY
 
 # Run development server
 npm run dev
@@ -121,7 +121,7 @@ I'm always open to interesting conversations and collaboration opportunities!
 - 🌐 **Portfolio**: [alvinadefuin-portfolio.vercel.app](https://alvinadefuin-portfolio.vercel.app)
 - 📧 **Email**: adefuinalvin1@gmail.com
 
-**Available for**: Full-time opportunities, collaborations, and exciting AI/ML projects!
+**Available for**: Part-time opportunities, collaborations, and exciting AI/ML projects!
 
 ## 🙏 Acknowledgments
 

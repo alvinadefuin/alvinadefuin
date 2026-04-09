@@ -1,6 +1,6 @@
 **ALVIN C. ADEFUIN**
 
-Laguna | Makati City **|** [adefuinalvin1@mail.com](mailto:adefuinalvin1@mail.com)  |  [GitHub](https://github.com/alvinadefuin)  |  [LinkedIn](https://www.linkedin.com/in/alvinadefuin)  |  [Portfolio](https://alvinadefuin-portfolio.vercel.app)
+Laguna | Makati City **|** [adefuinalvin1@gmail.com](mailto:adefuinalvin1@gmail.com)  |  [GitHub](https://github.com/alvinadefuin)  |  [LinkedIn](https://www.linkedin.com/in/alvinadefuin)  |  [Portfolio](https://alvinadefuin-portfolio.vercel.app)
 
 AI Software Developer specializing in generative AI solutions, RAG systems, and semantic search. Experienced in building production-ready AI applications using Python, FastAPI, React/Preact, Typesense, and LangChain. Delivered AI systems used by 9+ organizations, supporting thousands of users and high-volume LLM operations. Strong in rapid prototyping, PoC development, and working autonomously in cross-functional teams.
 
