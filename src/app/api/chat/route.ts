@@ -1,6 +1,5 @@
-import { createGoogleGenerativeAI } from '@ai-sdk/google';
-import { streamText, tool } from 'ai';
-import { z } from 'zod';
+import { createGroq } from '@ai-sdk/groq';
+import { streamText } from 'ai';
 
 import { SYSTEM_PROMPT } from './prompt';
 import { getContact } from './tools/getContact';
@@ -12,9 +11,9 @@ import { getSkills } from './tools/getSkills';
 
 export const maxDuration = 30;
 
-// Create Google AI provider with explicit API key
-const google = createGoogleGenerativeAI({
-  apiKey: process.env.GOOGLE_GENERATIVE_AI_API_KEY,
+// Create Groq AI provider
+const groq = createGroq({
+  apiKey: process.env.GROQ_API_KEY,
 });
 
 // ❌ Pas besoin de l'export ici, Next.js n'aime pas ça
@@ -37,15 +36,12 @@ export async function POST(req: Request) {
     console.log('[CHAT-API] Incoming messages:', messages);
     
     // Check if API key is available
-    if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
-      console.error('[CHAT-API] Missing GOOGLE_GENERATIVE_AI_API_KEY environment variable');
+    if (!process.env.GROQ_API_KEY) {
+      console.error('[CHAT-API] Missing GROQ_API_KEY environment variable');
       return new Response('Missing API key', { status: 500 });
     }
-    
-    console.log('[CHAT-API] API key available:', process.env.GOOGLE_GENERATIVE_AI_API_KEY?.slice(0, 10) + '...');
 
-    // Add system prompt
-    messages.unshift(SYSTEM_PROMPT);
+    console.log('[CHAT-API] API key available:', process.env.GROQ_API_KEY?.slice(0, 10) + '...');
 
     // Add tools
     const tools = {
@@ -58,18 +54,28 @@ export async function POST(req: Request) {
     };
 
     console.log('[CHAT-API] About to call streamText');
-    
+
     const result = await streamText({
-      model: google('gemini-1.5-flash'),
+      model: groq('llama-3.3-70b-versatile'),
+      system: SYSTEM_PROMPT.content,
       messages,
       tools,
-      maxSteps: 2,
+      maxSteps: 5,
+      onStepFinish: ({ stepType, toolCalls, toolResults, finishReason, text }) => {
+        console.log('[CHAT-API] Step finished:', { stepType, finishReason, text: text?.slice(0, 100) });
+        if (toolCalls?.length) console.log('[CHAT-API] Tool calls:', toolCalls.map(tc => tc.toolName));
+        if (toolResults?.length) console.log('[CHAT-API] Tool results received:', toolResults.map(tr => tr.toolName));
+      },
     });
 
     console.log('[CHAT-API] streamText completed successfully');
-    console.log('[CHAT-API] Result object keys:', Object.keys(result));
-    
-    const response = result.toDataStreamResponse();
+
+    const response = result.toDataStreamResponse({
+      getErrorMessage: (error) => {
+        console.error('[CHAT-API] Stream error:', error);
+        return error instanceof Error ? error.message : String(error);
+      },
+    });
     console.log('[CHAT-API] DataStreamResponse created');
     
     return response;
