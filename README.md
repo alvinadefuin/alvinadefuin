@@ -40,14 +40,24 @@ Agricultural mapping application using Naïve Bayes Algorithm for rice plant mon
 - **Impact**: Automated rice plant development stage detection
 
 ### AI-Powered Natural Language Search System
-Semantic search for 40K+ SKUs with 3-4x faster response times via intelligent caching.
+Semantic search across 34,607 products with 3-4x faster response times via intelligent caching.
 - **Tech**: Python, FastAPI, Typesense, OpenAI, Next.js, TypeScript, Railway
 - **Features**: Context-aware category classification, intelligent filter extraction, query debugging
 
-### RAG-Powered Chat Widget (Journey BBGI)
-Production chat widget handling 4,500+ conversations from 3,000+ users — 1,800+ qualified leads (29% conversion).
+### AI Development at JBBGI
+Production RAG-powered chat widget handling 4,500+ conversations from 3,000+ users — 1,800+ qualified leads (29% conversion).
 - **Tech**: Python, Flask, React/Preact, RAG, Sentry, Retool
 - **Scale**: 47,000+ LLM API calls, 9+ client organizations, multi-region (US & EU)
+
+### [RTO Tracker](https://github.com/alvinadefuin/rto-tracker)
+Return-to-office attendance tracker that reports whether you're meeting a 40% monthly in-office requirement, excluding leaves, holidays and mandated WFH.
+- **Tech**: Next.js, TypeScript, Drizzle ORM, Neon PostgreSQL, Auth.js v5
+- **Features**: Weekday stamping, automatic WFH inference, monthly compliance view
+
+### [MetroNest](https://github.com/alvinadefuin/metro-nest)
+Manila condo rental site for working professionals searching in BGC, Makati, Ortigas and Mandaluyong.
+- **Tech**: Astro 5, Tailwind CSS v4, Sanity CMS, React
+- **Features**: Static generation for speed, CMS-managed listings, responsive layout
 
 [➡️ View all projects](https://alvinadefuin-portfolio.vercel.app)
 
@@ -61,7 +71,7 @@ This repository contains my **AI-powered portfolio** built with cutting-edge tec
 
 ### ✨ Features
 
-- 🤖 **AI Chatbot** - Powered by Groq (Llama 3.3 70B) for intelligent interactions
+- 🤖 **AI Chatbot** - Powered by Groq (GPT-OSS 120B) with tool-driven UI panels
 - 🎨 **Modern Design** - Beautiful UI with Next.js 15 + TypeScript + Tailwind CSS
 - 📱 **Fully Responsive** - Optimized for all devices
 - 🌙 **Dark Mode** - Seamless theme switching
@@ -71,7 +81,7 @@ This repository contains my **AI-powered portfolio** built with cutting-edge tec
 ### 🛠️ Tech Stack
 
 **Frontend**: Next.js 15 • TypeScript • Tailwind CSS • shadcn/ui • Radix UI
-**AI/Backend**: Groq (Llama 3.3 70B) • AI SDK • Next.js API Routes
+**AI/Backend**: Groq (GPT-OSS 120B) • AI SDK • Next.js API Routes
 **Tools**: Framer Motion • React Hook Form • Sonner
 
 ### 🚀 Quick Start
