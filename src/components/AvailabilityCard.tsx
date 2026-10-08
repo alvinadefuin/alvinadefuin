@@ -203,7 +203,7 @@ const AvailabilityCard = ({ data }: AvailabilityCardProps) => {
       {/* Contact and CV buttons */}
       <div className="mt-10 flex justify-center gap-4 flex-wrap">
         <a
-          href="/adefuinalvin-portfolio-cv-2026-04.pdf"
+          href="/adefuinalvin-portfolio-cv-2026-10.pdf"
           download
           className="cursor-pointer rounded-full bg-blue-600 px-6 py-3 font-semibold text-white transition-colors duration-300 hover:bg-blue-700"
         >
