@@ -34,6 +34,12 @@ Cloud:          Vercel • Railway
 
 ## 🚀 Featured Projects
 
+### [StewardBox — SBCC Financial System](https://sbcc-financial-system.vercel.app) 🌟
+Church financial management system in active production use, covering collections, expenses, budgets and reporting. Collectors submit records from a phone; treasurers and admins manage records, run reports and audit changes from a desktop dashboard.
+- **Tech**: Node.js, Express, PostgreSQL, Google APIs, JWT, Vercel
+- **Features**: Role-based access (collector / treasurer / admin), audit trail, mobile-first submission, reporting dashboard
+- **Live**: [sbcc-financial-system.vercel.app](https://sbcc-financial-system.vercel.app) · [Source](https://github.com/alvinadefuin/sbcc-financial-system)
+
 ### [KASAKA: Agricultural Web & Mobile App](https://youtu.be/Il3CISBJDNE) 🏆
 Agricultural mapping application using Naïve Bayes Algorithm for rice plant monitoring. **Best in Thesis Award Winner**
 - **Tech**: Next.js, Flutter, Firebase, Machine Learning

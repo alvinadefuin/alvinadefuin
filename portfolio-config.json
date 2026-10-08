@@ -89,6 +89,39 @@
   },
   "projects": [
     {
+      "title": "StewardBox (SBCC Financial System)",
+      "description": "Church financial management system for Sto. Nino Bible Christian Church, covering collections, expenses, budgets and reporting. Collectors submit records from a phone while treasurers and admins manage records, run reports and audit changes from a desktop dashboard.",
+      "category": "Full-stack Development",
+      "techStack": [
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Google APIs",
+        "JWT",
+        "bcrypt",
+        "Vercel"
+      ],
+      "date": "2025-2026",
+      "status": "Active",
+      "featured": true,
+      "links": [
+        {
+          "name": "Live Demo",
+          "url": "https://sbcc-financial-system.vercel.app"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/alvinadefuin/sbcc-financial-system"
+        }
+      ],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "StewardBox (SBCC Financial System)"
+        }
+      ]
+    },
+    {
       "title": "KASAKA: Agricultural Web & Mobile App",
       "description": "Agricultural mapping application for monitoring rice plant development stages using the Naïve Bayes Algorithm. Led the development as Thesis Leader, earning Best in Thesis award.",
       "category": "AI/Web Development",
@@ -142,35 +175,60 @@
       ]
     },
     {
-      "title": "StewardBox (SBCC Financial System)",
-      "description": "Church financial management system for Sto. Nino Bible Christian Church, covering collections, expenses, budgets and reporting. Collectors submit records from a phone while treasurers and admins manage records, run reports and audit changes from a desktop dashboard.",
+      "title": "RTO Tracker",
+      "description": "Return-to-office attendance tracker that stamps the weekdays you were in the office and reports whether you are meeting a 40% monthly requirement. Unmarked weekdays count as work from home, while leaves, holidays, training days and mandated work-from-home periods are excluded from the computation.",
       "category": "Full-stack Development",
       "techStack": [
-        "Node.js",
-        "Express",
-        "PostgreSQL",
-        "Google APIs",
-        "JWT",
-        "bcrypt",
-        "Vercel"
+        "Next.js",
+        "TypeScript",
+        "Drizzle ORM",
+        "Neon PostgreSQL",
+        "Auth.js v5",
+        "Google OAuth",
+        "Tailwind CSS"
       ],
-      "date": "2025-2026",
-      "status": "Active",
-      "featured": false,
+      "date": "2026",
+      "status": "Completed",
+      "featured": true,
       "links": [
         {
-          "name": "Live Demo",
-          "url": "https://sbcc-financial-system.vercel.app"
-        },
-        {
           "name": "GitHub",
-          "url": "https://github.com/alvinadefuin/sbcc-financial-system"
+          "url": "https://github.com/alvinadefuin/rto-tracker"
         }
       ],
       "images": [
         {
           "src": "/placeholder.jpg",
-          "alt": "StewardBox (SBCC Financial System)"
+          "alt": "RTO Tracker"
+        }
+      ]
+    },
+    {
+      "title": "MetroNest",
+      "description": "Manila condo rental website aimed at working professionals searching in BGC, Makati, Ortigas and Mandaluyong. Built as a statically generated site with a Sanity CMS backend for listings and a clean, responsive layout.",
+      "category": "Web Development",
+      "techStack": [
+        "Astro 5",
+        "Tailwind CSS v4",
+        "Sanity CMS",
+        "React",
+        "TypeScript",
+        "Vite",
+        "Vercel"
+      ],
+      "date": "2026",
+      "status": "Completed",
+      "featured": true,
+      "links": [
+        {
+          "name": "GitHub",
+          "url": "https://github.com/alvinadefuin/metro-nest"
+        }
+      ],
+      "images": [
+        {
+          "src": "/placeholder.jpg",
+          "alt": "MetroNest"
         }
       ]
     },
@@ -234,64 +292,6 @@
         {
           "src": "/placeholder.jpg",
           "alt": "eDocx Document Request System"
-        }
-      ]
-    },
-{
-      "title": "RTO Tracker",
-      "description": "Return-to-office attendance tracker that stamps the weekdays you were in the office and reports whether you are meeting a 40% monthly requirement. Unmarked weekdays count as work from home, while leaves, holidays, training days and mandated work-from-home periods are excluded from the computation.",
-      "category": "Full-stack Development",
-      "techStack": [
-        "Next.js",
-        "TypeScript",
-        "Drizzle ORM",
-        "Neon PostgreSQL",
-        "Auth.js v5",
-        "Google OAuth",
-        "Tailwind CSS"
-      ],
-      "date": "2026",
-      "status": "Completed",
-      "featured": false,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/alvinadefuin/rto-tracker"
-        }
-      ],
-      "images": [
-        {
-          "src": "/placeholder.jpg",
-          "alt": "RTO Tracker"
-        }
-      ]
-    },
-{
-      "title": "MetroNest",
-      "description": "Manila condo rental website aimed at working professionals searching in BGC, Makati, Ortigas and Mandaluyong. Built as a statically generated site with a Sanity CMS backend for listings and a clean, responsive layout.",
-      "category": "Web Development",
-      "techStack": [
-        "Astro 5",
-        "Tailwind CSS v4",
-        "Sanity CMS",
-        "React",
-        "TypeScript",
-        "Vite",
-        "Vercel"
-      ],
-      "date": "2026",
-      "status": "Completed",
-      "featured": false,
-      "links": [
-        {
-          "name": "GitHub",
-          "url": "https://github.com/alvinadefuin/metro-nest"
-        }
-      ],
-      "images": [
-        {
-          "src": "/placeholder.jpg",
-          "alt": "MetroNest"
         }
       ]
     }
